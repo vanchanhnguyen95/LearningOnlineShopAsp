@@ -1,0 +1,15 @@
+﻿@model HelloWorld.Models.MessageModel
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div class="container">
+    @*Cách 1:Chuyền trực tiếp từ Controller xuống View*@
+    @ViewBag.WelcomeString
+    <p>Hello ASP.NET</p>
+
+    @*Cách 2: Dùng Models truyền*@
+    @Model.Welcome
+</div>
+
